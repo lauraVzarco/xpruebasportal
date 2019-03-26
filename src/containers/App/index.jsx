@@ -4,14 +4,16 @@ import Graphics from './components/Graphics';
 import Form from './components/Form';
 import DragDrop from './components/DragDrop';
 import Bootstrap from './components/Bootstrap';
+import './styles.css';
 
 
 class App extends Component {
   render() {
     return (
       <div>
+        <h1 className="app_title">Nice to see you again</h1>
       <Router>
-        <ul>
+        <ul className="app_list">
           <li>
             <NavLink to="/Graphics" title="Graphics">
               Gráfico

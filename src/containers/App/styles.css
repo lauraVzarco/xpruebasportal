@@ -1,0 +1,16 @@
+.app_title{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.app_list{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+ul > li {
+  margin-right: 2%;
+  font-size: 20px;
+}

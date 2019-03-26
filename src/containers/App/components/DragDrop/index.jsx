@@ -3,13 +3,17 @@ import React, { useEffect, useState } from 'react';
 import { useDropzone } from 'react-dropzone';
 
 const dragdrop = {
-  border: '1px dashed black'
+  marginLeft: '25%',
+  border: '1px dashed black',
+  textAlign: 'center',
+  width: '50%',
 };
 
 const thumbsContainer = {
   display: 'flex',
   flexDirection: 'row',
   flexWrap: 'wrap',
+  alignContent: 'center',
   marginTop: 16
 };
 
