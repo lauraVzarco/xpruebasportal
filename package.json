@@ -2,10 +2,12 @@
   "name": "xhrportalx",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://lauravzarco.github.io/xpruebasportal/",
   "dependencies": {
     "axios": "^0.18.0",
     "d3": "^5.9.2",
     "formik": "^1.5.1",
+    "gh-pages": "^2.0.1",
     "immutable": "^4.0.0-rc.12",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
@@ -19,6 +21,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
