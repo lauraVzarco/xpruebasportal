@@ -4,6 +4,7 @@ import Graphics from './components/Graphics';
 import Form from './components/Form';
 import DragDrop from './components/DragDrop';
 import Bootstrap from './components/Bootstrap';
+import Layout from './components/Layout';
 import './styles.css';
 
 
@@ -34,12 +35,18 @@ class App extends Component {
               Bootstrap
             </NavLink>
           </li>
+          <li>
+            <NavLink to="/Layout" title="Layout">
+              Layout
+            </NavLink>
+          </li>
         </ul>
         <Suspense fallback={ <div>Loading...</div> }>
           <Route path="/Graphics" render={ () => <Graphics /> } />
           <Route path="/Form" render={ () => <Form /> } />
           <Route path="/DragDrop" render={ () => <DragDrop /> } />
           <Route path="/Bootstrap" render={ () => <Bootstrap /> } />
+          <Route path="/Layout" render={ () => <Layout /> } />
         </Suspense>
       </Router>
     </div>
